@@ -66,7 +66,7 @@ Di Termux :
 EDITOR BY ARIFISTIFIK
 ------
 - `Add My ID LINE : calon_almarhum99 😂`
-- `Sambil nonton youtue biar cepet paham yang blom tau. dulu aku juga gitu 😊. Youtube me : PHIEZUKE`
+- `Sambil nonton youtue biar cepet paham yang blom tau. dulu aku juga gitu 😊. Youtube me : PHIEZUKE2`
 #cuma saran bukan menggurui 😅
 #aku juga masih pekok kuadrat😊
 
