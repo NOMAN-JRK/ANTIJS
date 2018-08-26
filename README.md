@@ -1,4 +1,4 @@
-# ARIFISTIFIK
+# SEMUA AKAN MATI PADA  WAKTUNYA
 BOT PROTECT PY3 ANTI JS V2 LINE🐦FIXS UPDATE 19 AGUSTUS 2018
 ------
 GET TOKEN :
@@ -27,9 +27,9 @@ C9 SERVER/ VPS :
 - `sudo pip3 install wikipedia`
 - `sudo pip3 install tweepy`
 - `sudo pip3 install youtube_dl`
-- `git clone https://github.com/arifistifik/ajs2`
-- `cd ajs2`
-- `python ajs.py`
+- `git clone https://github.com/PHIEZUKE/ANTIJS`
+- `cd ANTIJS`
+- `python JSNON.py`
 
 INSTALL Di TERMUX :
 - `pkg update`
@@ -48,9 +48,9 @@ INSTALL Di TERMUX :
 - `pip3 install wikipedia`
 - `pip3 install youtube_dl`
 - `pip3 install tweepy`
-- `git clone https://github.com/arifistifik/ajs2`
-- `cd ajs2`
-- `python3 ajs.py`
+- `git clone https://github.com/PHIEZUKE/ANTIJS`
+- `cd ANTIJS`
+- `python3 JSNON.py`
 
 Cara Menjalankan Bot Kembali :
 ------
@@ -65,8 +65,8 @@ Di Termux :
 
 EDITOR BY ARIFISTIFIK
 ------
-- `Add My ID LINE : ngak punya line😂`
-- `Sambil nonton youtue biar cepet paham yang blom tau. dulu aku juga gitu 😊. Youtube me : ARIFISTIFIK`
+- `Add My ID LINE : calon_almarhum99 😂`
+- `Sambil nonton youtue biar cepet paham yang blom tau. dulu aku juga gitu 😊. Youtube me : PHIEZUKE`
 #cuma saran bukan menggurui 😅
 #aku juga masih pekok kuadrat😊
 
