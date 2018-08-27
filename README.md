@@ -55,15 +55,15 @@ INSTALL Di TERMUX :
 Cara Menjalankan Bot Kembali :
 ------
 Di C9 :
-- `cd ajs2`
-- `python3 ajs.py`
+- `cd ANTIJS`
+- `python3 JSNON.py`
 
 Di Termux :
-- `cd ajs2`
-- `python3 ajs.py`
+- `cd ANTIJS`
+- `python3 JSNON.py`
 
 
-EDITOR BY ARIFISTIFIK
+UPLOADED BY CALON ALMARHUM
 ------
 - `Add My ID LINE : calon_almarhum99 😂`
 - `Sambil nonton youtue biar cepet paham yang blom tau. dulu aku juga gitu 😊. Youtube me : PHIEZUKE2`
@@ -73,5 +73,3 @@ EDITOR BY ARIFISTIFIK
 Thx To : ALLOH SWT & All
 ------
 - `SALAM HORMAT BUAT PARA MASTAH SEMUANYA 😅 `
-
-
