@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*- 
+import ARIFISTIFIK
 from ARIFISTIFIK import *
+from akad.ttypes import *
 from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
@@ -11,10 +13,10 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME  ---\n")
 
-#cl = LINE()
-cl = LINE(authTokenDPK="EwcQCTXIPLsANsbimgib.Sp/s6yipA4kI8lGDz1Jc/W.WBwQU7uzoEjoERpm4HeW/4vtWuHeGvGt7lNGir3ElX0")
+#cl = LineClient()
+cl = LineClient(authToken="EwcQCTXIPLsANsbimgib.Sp/s6yipA4kI8lGDz1Jc/W.WBwQU7uzoEjoERpm4HeW/4vtWuHeGvGt7lNGir3ElX0")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
-channel = LINEChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
+channel = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 print ("✍Ð₱₭ ฿Ø₮ LOGIN SUCCESS")
