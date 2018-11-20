@@ -10,42 +10,42 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
-cl = LineClient()
-#cl = LineClient(authToken='ISI TOKENMU  DISINI')
+#cl = LineClient()
+cl = LineClient(authToken='EzNsvhKnXh2kE1QAEQre.mDIRQD+WthuKlYOGL7ITRG.ECuNsVJ3VqFLUkeSZ+OWZiBW95o8FKCYR21R2ZqP1wk=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient()
-#ki = LineClient(authToken='ISI TOKENMU  DISINI')
+#ki = LineClient()
+ki = LineClient(authToken='EzUysz8x6gszQ32n9hVb.Sp/s6yipA4kI8lGDz1Jc/W.GlKYnT+zyzf16tz8FCA/irC8Wnf6V/q/VJTOmmZi3L4=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient()
-#kk = LineClient(authToken='ISI TOKENMU  DISINI')
+#kk = LineClient()
+kk = LineClient(authToken='EzDin0ucvMKKenMdWiJ5.DGWAJ8YwR3dlIsUkon0fHq.gGJhTKS8uGJo+DuMNq8Jrt+4p75GwQo/le5/BtIerDM=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient()
-#kc = LineClient(authToken='ISI TOKENMU  DISINI')
+#kc = LineClient()
+kc = LineClient(authToken='EzxlwtfshZhYHEANmOJ1.cP/gzSsYbkartt1P7xeFuq.cqbQHhVdSoTyWasIgQOJv29Z/0CDDMP6H1zgu6NL1jo=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient()
-#sw = LineClient(authToken='ISI TOKENMU  DISINI')
+#sw = LineClient()
+sw = LineClient(authToken='EzyQdYiAyyY4abHoMTp2.nEMHmGbI86rEKASUeMNhyG.xDhMTz80s3NBd1Dyk3Dn1tFoN/mHveefCTd5yj/5H5s=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ud296655acef67cbd5e8208e63629f78b"]
-owner = ["ud296655acef67cbd5e8208e63629f78b"]
-admin = ["ud296655acef67cbd5e8208e63629f78b"]
-staff = ["ud296655acef67cbd5e8208e63629f78b"]
+creator = ["u31d8aba9dff04c75242f2a2097b8adae"]
+owner = ["u31d8aba9dff04c75242f2a2097b8adae"]
+admin = ["u31d8aba9dff04c75242f2a2097b8adae"]
+staff = ["u31d8aba9dff04c75242f2a2097b8adae"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -129,10 +129,10 @@ wait = {
     "welcomeOn":False,
     "sticker":False,
     "selfbot":True,
-    "mention":"SINI KAK GABUNG CHAT AJA 😊",
-    "Respontag":"SEKAARNG TAG BESOK JATUH CINTA",
+    "mention":"SINI LAH GABUNG CHAT 😊",
+    "Respontag":"SEKAARNG TAG BESOK CALL PRIVATE",
     "welcome":"Selamat datang & betah",
-    "comment":"Like like & like by ARIFISTIFIK",
+    "comment":"Manual Like Ini Lho",
     "message":"Terimakasih sudah add saya 😃",
     }
 
@@ -212,7 +212,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Sider User「{}」\nHaii ".format(str(len(mid)))
+        textx = "User Sider「{}」\nCyduk kan ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -239,7 +239,7 @@ def siderMembers(to, mid):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Member Masuk「{}」\nHaii  ".format(str(len(mid)))
+        textx = "Nah ketemu lagi「{}」\nEhmm  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -285,7 +285,7 @@ def sendMention(to, mid, firstmessage):
         timeNow = datetime.now(tz=tz)
         eltime = time.time() - mulai
         bot = runtime(eltime)
-        text += mention+"⏩Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n⏩Group : "+str(len(gid))+"\n⏩Teman : "+str(len(teman))+"\n⏩Expired : In "+hari+"\n⏩Version : ARIFISTIFIK\n⏩Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n⏩Runtime : \n • "+bot
+        text += mention+"⏩Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n⏩Group : "+str(len(gid))+"\n⏩Teman : "+str(len(teman))+"\n⏩Expired : In "+hari+"\n⏩Version : 🕴-BOT CHAT\n⏩Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n⏩Runtime : \n • "+bot
         cl.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
@@ -510,44 +510,44 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        cl.sendMessage(op.param1,"Room " +str(ginfo.name))
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " + str(ginfo.name))
+                        cl.sendMessage(op.param1,"Room " + str(ginfo.name))
             if Amid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Selamat Tinggal\n ya " +str(ginfo.name))
                         ki.leaveGroup(op.param1)
                     else:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        ki.sendMessage(op.param1,"Room " + str(ginfo.name))
             if Bmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kk.acceptGroupInvitation(op.param1)
                         ginfo = kk.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Selamat Tinggal\n ya " +str(ginfo.name))
                         kk.leaveGroup(op.param1)
                     else:
                         kk.acceptGroupInvitation(op.param1)
                         ginfo = kk.getGroup(op.param1)
-                        kk.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kk.sendMessage(op.param1,"Room " + str(ginfo.name))
             if Cmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        kc.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kc.sendMessage(op.param1,"Selamat Tinggal\n ya " +str(ginfo.name))
                         kc.leaveGroup(op.param1)
                     else:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        kc.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kc.sendMessage(op.param1,"Room " + str(ginfo.name))
 
         if op.type == 13:
             if op.param1 in protectinvite:
@@ -1055,7 +1055,7 @@ def bot(op):
                    for mention in mentionees:
                         if mention ['M'] in Bots:
                            cl.sendMessage(msg.to, wait["Respontag"])
-                           cl.sendMessage(msg.to, None, contentMetadata={"STKID":"7839705","STKPKGID":"1192862","STKVER":"1"}, contentType=7)
+                           cl.sendMessage(msg.to, None, contentMetadata={"STKID":"14345827","STKPKGID":"1363310","STKVER":"1"}, contentType=7)
                            break
                if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["Mentionkick"] == True:
@@ -1125,7 +1125,7 @@ def bot(op):
                         cl.sendMessage(msg.to,"Berhasil menghapus dari anggota bot")
                     else:
                         wait["dellbots"] = True
-                        cl.sendMessage(msg.to,"Contact itu bukan anggota bot Dpk")
+                        cl.sendMessage(msg.to,"Contact itu bukan anggota bot")
 #ADD STAFF
                  if msg._from in admin:
                   if wait["addstaff"] == True:
@@ -1298,7 +1298,7 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "⏩ĐPĶ PŘØŤĘČŤÎØŇ⏪\n"
+                                md = "⏩STATBOT PŘØŤĘČŤÎØŇ⏪\n"
                                 if wait["sticker"] == True: md+="⏩Sticker「ON」\n"
                                 else: md+="⏩Sticker「OFF」\n"
                                 if wait["contact"] == True: md+="⏩Contact「ON」\n"
@@ -1333,7 +1333,7 @@ def bot(op):
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Bot ARIFISTIFIK") 
+                                cl.sendText(msg.to,"Creator BotChat") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1478,7 +1478,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                cl.sendMessage(msg.to, "⏩ĐPĶ Fams Grup Info\n\n⏩Nama Group : {}".format(G.name)+ "\n⏩ID Group : {}".format(G.id)+ "\n⏩Pembuat : {}".format(G.creator.displayName)+ "\n⏩Waktu Dibuat : {}".format(str(timeCreated))+ "\n⏩Jumlah Member : {}".format(str(len(G.members)))+ "\n⏩Jumlah Pending : {}".format(gPending)+ "\n⏩Group Qr : {}".format(gQr)+ "\n⏩Group Ticket : {}".format(gTicket))
+                                cl.sendMessage(msg.to, "⏩Detail Grup Info\n\n⏩Nama Group : {}".format(G.name)+ "\n⏩ID Group : {}".format(G.id)+ "\n⏩Pembuat : {}".format(G.creator.displayName)+ "\n⏩Waktu Dibuat : {}".format(str(timeCreated))+ "\n⏩Jumlah Member : {}".format(str(len(G.members)))+ "\n⏩Jumlah Pending : {}".format(gPending)+ "\n⏩Group Qr : {}".format(gQr)+ "\n⏩Group Ticket : {}".format(gTicket))
                                 cl.sendMessage(msg.to, None, contentMetadata={'mid': G.creator.mid}, contentType=13)
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
                             except Exception as e:
@@ -1509,7 +1509,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                ret_ += "⏩ĐPĶ Fams Grup Info\n"
+                                ret_ += "⏩Detail Grup Info\n"
                                 ret_ += "\n⏩Nama Group : {}".format(G.name)
                                 ret_ += "\n⏩ID Group : {}".format(G.id)
                                 ret_ += "\n⏩Pembuat : {}".format(gCreator)
@@ -1874,7 +1874,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"⏩ĐPĶ  bot\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
+                                cl.sendMessage(msg.to,"⏩All bot\n\n"+ma+"\nTotal「%s」 Bots" %(str(len(Bots))))
 
                         elif cmd == "listadmin":
                           if wait["selfbot"] == True:
@@ -1897,7 +1897,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"⏩ĐPĶ  admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」 Dpk" %(str(len(owner)+len(admin)+len(staff))))
+                                cl.sendMessage(msg.to,"⏩List admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」 Dpk" %(str(len(owner)+len(admin)+len(staff))))
 
                         elif cmd == "listprotect":
                           if wait["selfbot"] == True:
@@ -1930,7 +1930,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getGroup(group).name + "\n"
-                                cl.sendMessage(msg.to,"⏩ĐPĶ Fams Protection\n\n⏩PROTECT URL :\n"+ma+"\n⏩PROTECT KICK :\n"+mb+"\n⏩PROTECT JOIN :\n"+md+"\n⏩PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
+                                cl.sendMessage(msg.to,"⏩Bot Protection\n\n⏩PROTECT URL :\n"+ma+"\n⏩PROTECT KICK :\n"+mb+"\n⏩PROTECT JOIN :\n"+md+"\n⏩PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
 
                         elif cmd == "respon":
                           if wait["selfbot"] == True:
@@ -2076,7 +2076,7 @@ def bot(op):
                                 get_contact_time_start = time.time()
                                 get_contact = cl.getContact(mid)
                                 get_contact_time = time.time() - get_contact_time_start
-                                cl.sendMessage(msg.to, "⏩ĐPĶ Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
+                                cl.sendMessage(msg.to, "⏩Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
@@ -3103,7 +3103,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"⏩ĐPĶ Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
+                                cl.sendMessage(msg.to,"⏩Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
@@ -3117,7 +3117,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"⏩ĐPĶ Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
+                                cl.sendMessage(msg.to,"⏩Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
 
                         elif cmd == "blc" or text.lower() == 'blc':
                           if wait["selfbot"] == True:
